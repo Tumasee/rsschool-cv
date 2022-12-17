@@ -1,13 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>CV</title>
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV page</title>
 </head>
 <body>
-    <h1>YAUHENI TUMAS</h1>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#Contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="#Summary" class="nav-link">Summary</a></li>
+                <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#Code-Example" class="nav-link">Code Example</a></li>
+                <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#Education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#English-level" class="nav-link">English level</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>        
+        <div id="profile">
+            <img src="assets/img/avatar2.jpg" alt="My Photo" height="400">
+             <section class="name">
+                <h1 class="section-title">Yauheni Tumas</h1>
+                <h2>Front-end Developer</h2>
+            </section>
+        </div>
+        <section id="Contacts">
+            <h2 class="section-title">contacts</h2>
+            <ul>
+                <li>City: <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D1%91%D0%B2" target="_blank">Mogilev</a></li>
+                <li>E-mail: <a href="mailto:tymas-geni@mail.ru">tymas-geni@mail.ru</a></li>
+                <li>Mobile phone number: <a href="tel:+375445581420">+375445581420</a></li>
+                <li>GitHub account: <a href="https://github.com/Tumasee" target="_blank">Tumasee</a></li>
+                <li>Vkontakte account: <a href="https://vk.com/etumas" target="_blank">etumas</a></li>
+                <li>Discord account: Tumasee#6913</li>
+            </ul>
+        </section>
+        <section id="Summary">
+            <h2 class="section-title">summary</h2>
+            <p>At this moment I&acute;m learning programming, I&acute;m good at it,
+               I understand the basics and principles of the domain. Now I work
+               as an electrician, but soon I want to work as a programmer . I
+               am a responsible and executive men.</p>
+        </section>
+        <section id="Code-Example">
+            <h2 class="section-title">code example</h2>
+            <pre>
+                <code>
+function calc(x){
+    let total1 = "";
+    let total2 = "";
+    let sumtotal1 = 0;
+    let sumtotal2 = 0;
+
+    for (let i = 0; i &lt; x.length; i++){
+         total1 += x.charCodeAt(i);
+    }
+
+    for (i = 0; i &lt; total1.length; i++){
+        let char = total1.split("")[i];
+        if (char === "7"){
+          total2 += "1";
+         } 
+        else {
+          total2 += char;
+        }
+    }
+
+    for (i = 0; i &lt; total1.length; i++){
+      sumtotal1 += Number(total1.split("")[i]);
+      sumtotal2 += Number(total2.split("")[i]);
+    }
+    
+    return sumtotal1-sumtotal2;
+}
+                </code>
+            </pre>
+        </section>
+        <section id="Education">
+            <h2 class="section-title">education</h2>
+            <ul>
+                <li>MPSC 2012-2016</li>
+                <li>BRU 2016-2021</li>
+                <li>htmlacademy - html and css courses</li>
+                <li>codeacademy - html and css courses</li>
+                <li>SoloLearn - html and css</li>
+                <li>RS School Dec.2022 - till now</li>
+            </ul>
+        </section>
+        <section id="Projects">
+            <h2 class="section-title">projects</h2>
+            <a href="#">My CV page</a>
+        </section>
+        <section id="Skills">
+            <h2 class="section-title">skills</h2>
+            <ul>
+                <li>HTML/HTML5</li>
+                <li>CSS/CSS3</li>
+                <li>Javascript</li>
+            </ul>
+        </section>
+        <section id="English-level">
+            <h2 class="section-title">english level</h2>
+            <p>Basic from school (A2), but i&acute;m trying</p>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/Tumasee" target="_blank">GITHUB : Tumasee</a>
+        <span>2022</span>
+        <a href="https://rs.school/js/" target="_blank"><img src="https://rs.school/images/rs_school_js.svg" alt="RSS"></a>
+    </footer>
 </body>
 </html>
