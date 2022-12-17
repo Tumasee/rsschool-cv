@@ -1,4 +1,197 @@
-h1 {
-    color: darkorchid;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap');
+
+* {
+    color: #d2d3c3;
+    box-sizing: border-box;
+
+}
+
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
+html {
+    background-image: url("assets/img/background.png");
+    scroll-behavior: smooth;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+body {
+    background-color: #050505;
+    border: 1px solid #ffffff;
+    max-width: 960px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 80px #f5deb3;
+}
+
+@keyframes paw {
+    0%{
+        box-shadow: 0px 0px 20px #f5deb3;
+    }
+    50% {
+        box-shadow: 0px 0px 40px #f5deb3;
+    }
+    100% {
+        box-shadow: 0px 0px 60px #f5deb3;
+    }
+}
+
+a:hover {
+    animation: paw 1.5s infinite;
+    color: #f0f8ff;    
+    border-radius: 5px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0 40px;
+}
+
+.nav-link {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main ul {
+    list-style: url(assets/img/rrr2.png)
+}
+
+#profile {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name h2 {
+    margin: 5px 0;
+}
+
+section {
+    width: 50%;
+    padding: 0 60px;
+}
+
+@keyframes epileptic {
+    0% {
+        box-shadow: 10px 0px 100px wheat;
+    }
+    6% {
+        box-shadow: 10px 5px 100px wheat;
+    }
+    12% {
+        box-shadow: 10px 10px 100px wheat;
+    }
+    18% {
+        box-shadow: 5px 10px 100px wheat;
+    }
+    24% {
+        box-shadow: 0px 10px 100px wheat;
+    }
+    30% {
+        box-shadow: -5px 10px 100px wheat;
+    }
+    36% {
+        box-shadow: -10px 10px 100px wheat;
+    }
+    42% {
+        box-shadow: -10px 5px 100px wheat;
+    }
+    48% {
+        box-shadow: -10px 0px 100px wheat;
+    }
+    54% {
+        box-shadow: -10px -5px 100px wheat;
+    }
+    60% {
+        box-shadow: -10px -10px 100px wheat;
+    }
+    66% {
+        box-shadow: -5px -10px 100px wheat;
+    }
+    72% {
+        box-shadow: 0px -10px 100px wheat;
+    }
+    78% {
+        box-shadow: 5px -10px 100px wheat;
+    }
+    84%{
+        box-shadow: 10px -10px 100px wheat;
+    }
+    91%{
+        box-shadow: 10px -5px 100px wheat;
+    }
+    100%{
+        box-shadow: 10px 0px 100px wheat;
+    }
+}
+
+main img:hover {
+    animation: epileptic 2s infinite;
+}
+
+main img {
+    box-shadow: 0 0 20px #808080;
+    border-radius: 20px;
+}
+
+h1,
+h2 {
+    font-family: 'Unbounded', cursive;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 3rem;
+    border-bottom: 8px double #f5deb3;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    font-family: 'Unbounded', cursive;
+    padding: 20px 0;
+    border-top: 1px dashed #d2d3c3;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+footer a {
+    font-size: 1.5rem;    
+}
+
+footer img {
+    height: 40px;
+    background-color: #d2d3c3;
+    border-radius: 10px;
+}
+
+footer span {
+    font-size: 2rem;
 }
